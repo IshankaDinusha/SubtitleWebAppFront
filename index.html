@@ -32,11 +32,12 @@
                                     <a class="navbar-brand text-white d-md-none d-lg-none d-xl-none d-xxl-none"
                                         href="#">SWA</a>
 
-                                    <button class="btn btn-primary d-md-none ms-2 menu-btn rounded-circle" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                    <button
+                                        class="btn btn-outline-light border-0 menu-btn d-md-none ms-2 rounded-circle"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                                         data-bs-target="#navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">
-                                        <i class="fa-solid fa-bars"></i>
+                                        aria-label="Toggle navigation" onclick="menuBtn();">
+                                        <i class="fa-solid fa-bars" id="menuBtnIcon"></i>
                                     </button>
 
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,7 +65,7 @@
 
                                         <form class="search-box" role="search">
                                             <div class="wrapper d-flex rounded-pill">
-                                                <input class="w-100" type="search" placeholder="Search"
+                                                <input class="w-100" type="search" placeholder="Search.."
                                                     aria-label="Search" style="min-width: 300px;">
                                                 <button class="btn btn-primary rounded-circle" type="submit">
                                                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -95,7 +96,7 @@
                                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
-                            <div class="carousel-inner rounded">
+                            <div class="carousel-inner rounded-4">
                                 <div class="carousel-item active">
                                     <img src="resources/images/3.body.problem.poster.jpg" alt=""
                                         class="d-block w-100 object-fit-cover" style="height: 500px;">
@@ -124,83 +125,46 @@
                     </div>
 
                     <div class="col-12 mt-3">
-                        
+
                         <h5 class="text-white">Movies</h5>
 
                     </div>
 
                     <div class="col-12 col-md-8">
 
-                        <div id="secondCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="secondCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                            <div class="carousel-inner rounded">
+                            <div class="carousel-inner rounded-4">
                                 <div class="carousel-item active">
                                     <img src="resources/images/3.body.problem.poster.jpg" alt=""
                                         class="d-block w-100 object-fit-cover" style="height: 500px;">
 
-                                    <div class="second-carousel-caption d-flex align-items-center justify-content-end">
-                                        <div class="col-12 col-md-6 p-5">
+                                    <div
+                                        class="second-carousel-caption row d-flex align-items-end justify-content-center">
+                                        <div class="col-12 col-md-5 mb-5">
+                                            <div>
+                                                <span>By Deemantha</span>
+                                                <span>.</span>
+                                                <span>15 February 2024</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-7 mb-5">
                                             <h5>Dune: Part Two (2024) Sinhala Sub</h5>
-                                            <p>
-                                                Follow the mythic journey of Paul Atreides as he unites with Chani and
+                                            <p class="my-4 mx-4">
+                                                Follow the mythic journey of Paul Atreides as he unites with Chani
+                                                and
                                                 the
-                                                Fremen while on a path of revenge against the conspirators who destroyed
+                                                Fremen while on a path of revenge against the conspirators who
+                                                destroyed
                                                 his
-                                                family. Facing a choice between the love of his life and the fate of the
-                                                known universe, Paul endeavors to prevent a terrible future only he can
-                                                foresee.
+                                                family.
                                             </p>
-                                            <span class="fst-italic">Uploaded on: </span>
-                                            <span class="fst-italic">April 06 2024</span>
-                                            <p class="fst-italic">By Deemantha</p>
+                                            <button class="btn btn-primary rounded-pill">Go to Subtitle Page</button>
+
                                         </div>
                                     </div>
 
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="resources/images/dune-part-two-poster.jpg" alt=""
-                                        class="d-block w-100 object-fit-cover" style="height: 500px;">
-
-                                    <div class="second-carousel-caption d-flex align-items-center justify-content-end">
-                                        <div class="col-12 col-md-6 p-5">
-                                            <h5>Dune: Part Two (2024) Sinhala Sub</h5>
-                                            <p>
-                                                Follow the mythic journey of Paul Atreides as he unites with Chani and
-                                                the
-                                                Fremen while on a path of revenge against the conspirators who destroyed
-                                                his
-                                                family. Facing a choice between the love of his life and the fate of the
-                                                known universe, Paul endeavors to prevent a terrible future only he can
-                                                foresee.
-                                            </p>
-                                            <span class="fst-italic">Uploaded on: </span>
-                                            <span class="fst-italic">April 06 2024</span>
-                                            <p class="fst-italic">By Deemantha</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="resources/images/ghostbusters-frozen-empire_poster.jpg" alt=""
-                                        class="d-block w-100 object-fit-cover" style="height: 500px;">
-
-                                    <div class="second-carousel-caption d-flex align-items-center justify-content-end">
-                                        <div class="col-12 col-md-6 p-5">
-                                            <h5>Dune: Part Two (2024) Sinhala Sub</h5>
-                                            <p>
-                                                Follow the mythic journey of Paul Atreides as he unites with Chani and
-                                                the
-                                                Fremen while on a path of revenge against the conspirators who destroyed
-                                                his
-                                                family. Facing a choice between the love of his life and the fate of the
-                                                known universe, Paul endeavors to prevent a terrible future only he can
-                                                foresee.
-                                            </p>
-                                            <span class="fst-italic">Uploaded on: </span>
-                                            <span class="fst-italic">April 06 2024</span>
-                                            <p class="fst-italic">By Deemantha</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,9 +173,9 @@
 
                     <div class="col">
 
-                        <div class="card movie-genres" style="height: 100%;">
+                        <div class="card movie-genres rounded-4" style="height: 100%;">
                             <div class="card-body">
-                                <h5 class="card-title text-white mb-3">Movie Genres</h5>
+                                <h5 class="card-title text-white mb-3">Movies+Genres</h5>
                                 <div class="d-flex flex-wrap gap-2">
 
                                     <a href="#" class="btn btn-outline-light rounded-pill">Action</a>
@@ -231,6 +195,997 @@
 
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+
+                        <h5 class="text-white text-center text-md-start" id="moviesLatest">Movies+Latest</h5>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row row-gap-4 justify-content-center">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row row-gap-4 justify-content-center mt-4 d-none" id="moreMoviesLatest">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row text-center mt-3">
+
+                            <div class="col">
+                                <a href="" class="btn btn-primary rounded-pill" onclick="moviesShowMoreLatest(this);">Show More 
+                                    <i class="fa-solid fa-angles-down ms-1"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 mt-3">
+
+                        <h5 class="text-white text-center text-md-start" id="moviesPopular">Movies+Popular</h5>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row row-gap-4 justify-content-center">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row row-gap-4 justify-content-center mt-4 d-none" id="moreMoviesPopular">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row text-center mt-3">
+
+                            <div class="col">
+                                <a href="" class="btn btn-primary rounded-pill" onclick="moviesShowMorePopular(this);">Show More 
+                                    <i class="fa-solid fa-angles-down ms-1"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            
+                            <div class="w-75 d-flex justify-content-center align-items-center" style="height: 180px; border: 1px solid white;">
+
+                                <span class="text-white">ADS</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 mt-3">
+
+                        <h5 class="text-white">Tv Series</h5>
+
+                    </div>
+
+                    <div class="col-12 col-md-8">
+
+                        <div id="thirdCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                            <div class="carousel-inner rounded-4">
+                                <div class="carousel-item active">
+                                    <img src="resources/images/3.body.problem.poster.jpg" alt=""
+                                        class="d-block w-100 object-fit-cover" style="height: 500px;">
+
+                                    <div
+                                        class="third-carousel-caption row d-flex align-items-end justify-content-center">
+                                        <div class="col-12 col-md-5 mb-5">
+                                            <div>
+                                                <span>By Deemantha</span>
+                                                <span>.</span>
+                                                <span>15 February 2024</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-7 mb-5">
+                                            <h5>Dune: Part Two (2024) Sinhala Sub</h5>
+                                            <p class="my-4 mx-4">
+                                                Follow the mythic journey of Paul Atreides as he unites with Chani
+                                                and
+                                                the
+                                                Fremen while on a path of revenge against the conspirators who
+                                                destroyed
+                                                his
+                                                family.
+                                            </p>
+                                            <button class="btn btn-primary rounded-pill">Go to Subtitle Page</button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="card tv-genres rounded-4" style="height: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title text-white mb-3">Tv Series+Genres</h5>
+                                <div class="d-flex flex-wrap gap-2">
+
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Action</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Adventure</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Comedy</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Drama</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Horror</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Science Fiction</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Fantasy</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Thriller</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Mystery</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Romance</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Animation</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Documentry</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Musical</a>
+                                    <a href="#" class="btn btn-outline-light rounded-pill">Sports</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+
+                        <h5 class="text-white text-center text-md-start" id="tvLatest">Tv Series+Latest</h5>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row row-gap-4 justify-content-center">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row row-gap-4 justify-content-center mt-4 d-none" id="moreTvLatest">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row text-center mt-3">
+
+                            <div class="col">
+                                <a href="" class="btn btn-primary rounded-pill" onclick="tvShowMoreLatest(this);">Show More 
+                                    <i class="fa-solid fa-angles-down ms-1"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 mt-3">
+
+                        <h5 class="text-white text-center text-md-start" id="tvPopular">Tv Series+Popular</h5>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row row-gap-4 justify-content-center">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row row-gap-4 justify-content-center mt-4 d-none" id="moreTvPopular">
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 col-md">
+
+                                <div class="card thumb-card border-0 rounded-4">
+                                    <img src="resources/images/thumbs/spiderman-into-spider-verse-thumb.jpg"
+                                        class="card-img-top w-100 object-fit-cover" alt="..."
+                                        style="aspect-ratio: 4x3; border-radius: 1rem 1rem 0 0;">
+                                    <div class="card-body thumb-card-body">
+                                        <p class="card-title text-white">Spiderman Into The Spider-Verse (2018) Sinhala
+                                            Subtitle</p>
+                                        <p class="card-text text-white">14 May 2018</p>
+                                        <a href="#" class="btn btn-primary rounded-pill btn-sm">By Deemantha</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="row text-center mt-3">
+
+                            <div class="col">
+                                <a href="" class="btn btn-primary rounded-pill" onclick="tvShowMorePopular(this);">Show More 
+                                    <i class="fa-solid fa-angles-down ms-1"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            
+                            <div class="w-75 d-flex justify-content-center align-items-center" style="height: 180px; border: 1px solid white;">
+
+                                <span class="text-white">ADS</span>
+
+                            </div>
+
                         </div>
                     </div>
 
@@ -254,6 +1209,7 @@
 
     <script src="bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/322a915a0a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
