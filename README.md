@@ -2,8 +2,8 @@
 Subtilte Web Application Front-end using Bootstrap.
 
 - UI Designer : [Sashin-Deemantha]
-- Link : [Link]
+- Link : [SubtitleWebAppFront]
 
 [Sashin-Deemantha]: https://github.com/Sashin517
 
-[Link]: https://ishankadinusha.github.io/SubtitleWebAppFront/
+[SubtitleWebAppFront]: https://ishankadinusha.github.io/SubtitleWebAppFront/
